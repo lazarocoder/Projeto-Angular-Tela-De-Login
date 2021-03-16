@@ -25,11 +25,11 @@ export class CadastroComponent implements OnInit {
       id: undefined,
       nome: ['', Validators.required],
       cpf: ['', Validators.required],
-      sexo: ['', Validators.required],
+      sexo: [''],
       email: ['', Validators.required],
-      naturalidade: ['', Validators.required],
-      nacionalidade: ['', Validators.required],
-      dataNascimento: ['']
+      naturalidade: [''],
+      nacionalidade: [''],
+      dataNascimento: ['', Validators.required]
     });
     this.activatedRoute.data.subscribe(result=>{
       if(result.pessoa){
